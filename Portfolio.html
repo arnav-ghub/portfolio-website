@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arnav Srivastava - Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    nav {
+      background: #333;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    #welcome-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding-top: 60px;
+    }
+
+    #welcome-section h1 {
+      font-size: 3rem;
+    }
+
+    #projects {
+      padding: 50px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .project-tile {
+      margin: 20px;
+      display: inline-block;
+      max-width: 300px;
+      background: #fafafa;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .project-tile img {
+      width: 100%;
+    }
+
+    .project-tile p {
+      padding: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      #projects {
+        display: block;
+      }
+
+      .project-tile {
+        width: 90%;
+        margin: 10px auto;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div><strong>Arnav Srivastava</strong></div>
+    <div>
+      <a href="#welcome-section">About</a>
+      <a href="#projects">Projects</a>
+      <a id="profile-link" href="https://github.com/arnavsrivastava224" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Hello, I'm Arnav</h1>
+    <p>Aspiring Web Developer | MCA Student</p>
+  </section>
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <!-- Personal Portfolio Project -->
+  <div class="project-tile">
+    <a href="index.html" target="_blank">
+      <img src="https://via.placeholder.com/300x200?text=Portfolio" alt="Portfolio Website">
+      <p>Personal Portfolio Website</p>
+    </a>
+  </div>
+
+  <!-- Calculator App Project -->
+  <div class="project-tile">
+    <a href="simple_calculator_project/index.html" target="_blank">
+      <img src="https://via.placeholder.com/300x200?text=Calculator" alt="Calculator App">
+      <p>Simple Calculator App</p>
+    </a>
+  </div>
+
+  <!-- Color Flipper Project -->
+  <div class="project-tile">
+    <a href="color_flipper/index.html" target="_blank">
+      <img src="https://via.placeholder.com/300x200?text=Color+Flipper" alt="Color Flipper">
+      <p>Background Color Flipper</p>
+    </a>
+  </div>
+
+</section>
+
+  <footer>
+    © 2025 Arnav Srivastava | Lucknow, India
+  </footer>
+
+  <!-- FreeCodeCamp Test Script -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
